@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfApp24.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp24"
+        mc:Ignorable="d"
+        Title="PersonInfo v1.1" Height="450" Width="800" ResizeMode="NoResize" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Label Content="PersonInfo v1.1" HorizontalAlignment="Left" Margin="336,22,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Button x:Name="ExitButton" Content="Выход" HorizontalAlignment="Left" Margin="697,380,0,0" VerticalAlignment="Top" Width="55" Background="Black" Foreground="White" Click="ExitButton_Click"/>
+        <TextBox x:Name="FIOText" HorizontalAlignment="Left" Height="23" Margin="100,149,0,0" TextWrapping="Wrap" Text="ФИО" VerticalAlignment="Top" Width="120" TextAlignment="Center" Foreground="Black" Background="White"/>
+        <TextBox x:Name="EmailText" HorizontalAlignment="Left" Height="23" Margin="100,177,0,0" TextWrapping="Wrap" Text="eMail" VerticalAlignment="Top" Width="120" TextAlignment="Center" Foreground="Black" Background="White"/>
+        <TextBox x:Name="TeleText" HorizontalAlignment="Left" Height="23" Margin="100,205,0,0" TextWrapping="Wrap" Text="Телефон" VerticalAlignment="Top" Width="120" TextAlignment="Center" Foreground="Black" Background="White"/>
+        <TextBox x:Name="SnilsText" HorizontalAlignment="Left" Height="23" Margin="100,233,0,0" TextWrapping="Wrap" Text="Снилс" VerticalAlignment="Top" Width="120" TextAlignment="Center" Foreground="Black" Background="White"/>
+        <ComboBox x:Name="IdPersonBox" HorizontalAlignment="Left" Margin="100,122,0,0" VerticalAlignment="Top" Width="61"/>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="166,122,0,0" VerticalAlignment="Top" Width="54" Height="22" FontSize="10" Background="#FFDBDBDB" Foreground="Black"/>
+        <Button x:Name="AddButton" Content="Добавить" HorizontalAlignment="Left" Margin="100,261,0,0" VerticalAlignment="Top" Width="120" Click="AddButton_Click"/>
+        <Button x:Name="ViewButton" Content="Показать" HorizontalAlignment="Left" Margin="321,261,0,0" VerticalAlignment="Top" Width="75" Click="ViewButton_Click"/>
+        <Button x:Name="DeleteButton1" Content="Удалить выбранный обьект" HorizontalAlignment="Left" Margin="401,261,0,0" VerticalAlignment="Top" Width="163" Click="DeleteClick"/>
+        <TextBox x:Name="SearchText" HorizontalAlignment="Left" Height="22" Margin="321,122,0,0" TextWrapping="Wrap" Text="Поиск" VerticalAlignment="Top" Width="379" RenderTransformOrigin="0.38,0.135" TextAlignment="Center"/>
+        <Button x:Name="SearchButton" Content="8" HorizontalAlignment="Left" Margin="700,123,0,0" VerticalAlignment="Top" Width="52" FontFamily="Wingdings" Height="21" Click="SearchButton_Click"/>
+        <ListBox x:Name="ListPerson" HorizontalAlignment="Left" Height="108" Margin="321,149,0,0" VerticalAlignment="Top" Width="431"/>
+        <Button x:Name="FullInfoButton" Content="Показать полную информацию" HorizontalAlignment="Left" Margin="569,261,0,0" VerticalAlignment="Top" Width="183" Click="FullInfoClick"/>
+
+    </Grid>
+</Window>
